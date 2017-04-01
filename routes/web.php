@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/companies', function () {
+    $companies = DB::table('companies')->get();
+
+    return view('companies.index', compact('companies'));
+});
+
+Route::get('/companies/{company}', function ($id) {
+    $company = DB::table('companies')->find($id);
+
+    return view('companies.details', compact('company'));
+});
