@@ -10,6 +10,11 @@
         </a>
     </li>
     <li>
+        <a href="/companies/create">
+            Add company
+        </a>
+    </li>
+    <li>
         <a href="/about">
             About us
         </a>

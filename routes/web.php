@@ -9,4 +9,6 @@ Route::get('/about', function () {
 });
 
 Route::get('/companies', 'CompaniesController@index');
+Route::post('/companies', 'CompaniesController@store');
+Route::get('/companies/create', 'CompaniesController@create');
 Route::get('/companies/{company}', 'CompaniesController@show');

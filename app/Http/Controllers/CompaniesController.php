@@ -17,4 +17,16 @@ class CompaniesController extends Controller
     {
         return view('companies.show', compact('company'));
     }
+
+    public function create()
+    {
+        return view('companies.create');
+    }
+
+    public function store()
+    {
+        Company::create(request(['name', 'address']));
+
+        return redirect('/companies');
+    }
 }
