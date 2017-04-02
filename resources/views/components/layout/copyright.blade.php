@@ -1,1 +1,3 @@
-&copy; Copyright {{ date('Y') }} - Places
+<p class="copyright">
+    &copy; Copyright {{ date('Y') }} - Places
+</p>
