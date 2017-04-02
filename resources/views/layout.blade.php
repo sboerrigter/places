@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Places</title>
-
-        <link href="/css/app.css" rel="stylesheet">
+        @include('layout.head')
     </head>
-    <body>
+
+    <body class="@yield('body-class')">
         @include('layout.header')
-
+        @include('layout.navigation')
         @include('layout.main')
-
         @include('layout.footer')
     </body>
 </html>

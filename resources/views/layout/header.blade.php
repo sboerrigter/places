@@ -1,7 +1,5 @@
 <header class="header">
     <div class="container">
-        @include('layout.header.sitename')
-
-        @include('layout.header.navigation')
+        @include('components.layout.logo')
     </div>
 </header>

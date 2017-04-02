@@ -1,5 +1,5 @@
 <footer class="footer">
     <div class="container">
-        @include('layout.footer.copyright')
+        @include('components.layout.copyright')
     </div>
 </footer>

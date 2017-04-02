@@ -10,17 +10,17 @@ class CompaniesController extends Controller
     {
         $companies = Company::all();
 
-        return view('companies.index', compact('companies'));
+        return view('pages.companies.index', compact('companies'));
     }
 
     public function show(Company $company)
     {
-        return view('companies.show', compact('company'));
+        return view('pages.companies.show', compact('company'));
     }
 
     public function create()
     {
-        return view('companies.create');
+        return view('pages.companies.create');
     }
 
     public function store()
