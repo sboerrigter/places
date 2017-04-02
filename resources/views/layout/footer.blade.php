@@ -1,3 +1,5 @@
-<div class="footer">
-    &copy; Copyright {{ date('Y') }} - Places
-</div>
+<footer class="footer">
+    <div class="container">
+        @include('layout.footer.copyright')
+    </div>
+</footer>

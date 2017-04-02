@@ -1,5 +1,7 @@
-<a class="sitename" href="/">
-    Places
-</span>
+<header class="header">
+    <div class="container">
+        @include('layout.header.sitename')
 
-@include('layout.navigation')
+        @include('layout.header.navigation')
+    </div>
+</header>
