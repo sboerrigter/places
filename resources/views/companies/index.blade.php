@@ -5,11 +5,7 @@
 
     <ul>
         @foreach ($companies as $company)
-            <li class="company">
-                <a href="/companies/{{ $company->id }}">
-                    {{ $company->name }}
-                </a>
-            </li>
+            @include('companies.company')
         @endforeach
     </ul>
 @endsection
