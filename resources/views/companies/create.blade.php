@@ -3,6 +3,8 @@
 @section('content')
     <h1>Add company</h1>
 
+    @include('partials.errors')
+
     <form class="create-company" method="POST" action="/companies">
         {{ csrf_field() }}
 

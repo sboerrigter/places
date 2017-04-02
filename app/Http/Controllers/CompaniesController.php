@@ -25,6 +25,11 @@ class CompaniesController extends Controller
 
     public function store()
     {
+        $this->validate(request(), [
+            'title'   => 'required',
+            'address' => 'required',
+        ]);
+
         Company::create(request(['name', 'address']));
 
         return redirect('/companies');
