@@ -97,6 +97,20 @@ a:hover {
   font-size: 32px;
 }
 
+.loginmenu {
+  float: right;
+}
+
+.loginmenu__username {
+  color: #fff;
+}
+
+.loginmenu__item {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
 .mainmenu {
   float: left;
   margin: 10px 0;
