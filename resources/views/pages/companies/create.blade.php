@@ -6,6 +6,6 @@
     <div class="content">
         <h1>Add company</h1>
 
-        @include('components.companies.create-form')
+        @include('components.companies.create-company')
     </div>
 @endsection

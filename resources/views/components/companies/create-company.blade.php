@@ -1,6 +1,6 @@
 @include('components.errors')
 
-<form class="form create-company" method="POST" action="/companies">
+<form class="create-company form" method="POST" action="/companies">
     {{ csrf_field() }}
 
     <p class="form__field">
