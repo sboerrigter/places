@@ -1,23 +1,23 @@
-@include('components.forms.errors')
+@include('components.errors')
 
-<form class="create-form" method="POST" action="/companies">
+<form class="form create-company" method="POST" action="/companies">
     {{ csrf_field() }}
 
-    <p class="name">
+    <p class="form__field">
         <label for="name">
             Company name
         </label>
         <input type="text" name="name">
     </p>
 
-    <p class="address">
+    <p class="form__field">
         <label for="address">
             Address
         </label>
         <input type="text" name="address">
     </p>
 
-    <p class="submit">
+    <p class="form__submit">
         <button type="submit">
             Add company
         </button>
