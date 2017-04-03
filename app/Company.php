@@ -10,4 +10,9 @@ class Company extends Model
     {
         return $this->hasMany('App\Review');
     }
+
+    public function addReview($request)
+    {
+        $this->reviews()->create($request);
+    }
 }

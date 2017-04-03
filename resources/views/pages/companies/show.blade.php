@@ -13,10 +13,13 @@
         </p>
 
         <div class="reviews">
+            <h2>Reviews</h2>
             @foreach ($company->reviews as $review)
-                @include('components.review')
+                @include('components.reviews.review')
             @endforeach
         </div>
+
+        @include('components.reviews.create-review')
 
         <p>
             <a href="/companies/">
