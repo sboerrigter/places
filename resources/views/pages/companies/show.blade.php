@@ -12,6 +12,12 @@
             {{ $company->address }}
         </p>
 
+        <div class="reviews">
+            @foreach ($company->reviews as $review)
+                @include('components.review')
+            @endforeach
+        </div>
+
         <p>
             <a href="/companies/">
                 Back to the overview
