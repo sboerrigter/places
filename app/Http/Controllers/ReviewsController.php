@@ -6,6 +6,11 @@ use App\Company;
 
 class ReviewsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     public function store(Company $company)
     {
         $this->validate(request(), [

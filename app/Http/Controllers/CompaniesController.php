@@ -6,6 +6,11 @@ use App\Company;
 
 class CompaniesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     public function index()
     {
         $companies = Company::all();
@@ -30,7 +35,9 @@ class CompaniesController extends Controller
             'address' => 'required',
         ]);
 
-        Company::create(request(['name', 'address']));
+        auth()->user()->publish(
+            new Company(request(['name', 'address']))
+        );
 
         return back();
     }
