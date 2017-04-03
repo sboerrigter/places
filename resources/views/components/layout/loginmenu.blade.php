@@ -3,16 +3,16 @@
         <span class="loginmenu__username">
             Welcome {{ auth()->user()->name }}
         </span>
-        <a class="mainmenu__logout" href="/logout">
+        <a class="loginmenu__item" href="/logout">
             Logout
         </a>
     @else
-        <a class="mainmenu__login" href="/login">
+        <a class="loginmenu__item" href="/login">
             Login
         </a>
 
-        <a class="mainmenu__register" href="/register">
-            Login
+        <a class="loginmenu__item" href="/register">
+            Register
         </a>
     @endif
 </nav>
